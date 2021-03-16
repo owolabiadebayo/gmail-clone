@@ -1,0 +1,1411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo-menu-container">
+            <div id="menu">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"     viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </a>
+            </div>
+
+            <div id="logo">
+                <a href="./">
+                    <img class="gb_uc" src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_r2.png" srcset="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_r2.png 1x, https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_2x_r2.png 2x " alt="" aria-hidden="true" style="width:109px;height:40px">
+                </a>
+            </div>
+        </div>
+
+            <div class="search-area">
+
+                <button id="search">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                          </svg>
+                    </a>
+                </button>
+
+                <input type="text" name="" id="search-bar" placeholder="Search mail">
+                <div class="caret-cancel">
+                    <button id="cancel">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                              </svg>
+                        </a>
+                    </button>
+    
+                    <button id="caret">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ic_arrow_drop_down_24px</title>
+                                <g class="nc-icon-wrapper" fill="#525b60">
+                                    <path d="M7 10l5 5 5-5z"/>
+                                </g>
+                            </svg>
+                        </a>
+                    </button>
+                </div>
+                
+            </div>
+
+            <div class="cta-box">
+                <div id="support">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                    </a>
+                </div>
+                <div id="settings">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                          </svg>
+                    </a>
+                </div>
+                <div id="apps">
+                    <a href="#">
+                        <svg id="gg-menu-grid-o" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>gg menu grid o</title><g fill="none" class="nc-icon-wrapper"><path d="M8 6a2 2 0 1 1-4 0 2 2 0 0 1 4 0z" fill="#525b60"/><path d="M8 12a2 2 0 1 1-4 0 2 2 0 0 1 4 0z" fill="#525b60"/><path d="M6 20a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" fill="#525b60"/><path d="M14 6a2 2 0 1 1-4 0 2 2 0 0 1 4 0z" fill="#525b60"/><path d="M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" fill="#525b60"/><path d="M14 18a2 2 0 1 1-4 0 2 2 0 0 1 4 0z" fill="#525b60"/><path d="M18 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" fill="#525b60"/><path d="M20 12a2 2 0 1 1-4 0 2 2 0 0 1 4 0z" fill="#525b60"/><path d="M18 20a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" fill="#525b60"/></g></svg>
+                    </a>
+                </div>
+                <div id="profile">
+                    <a href="#">
+                        <p>A</p>
+                    </a>
+                </div>
+
+            </div>
+        
+        
+        
+    </nav>
+
+    <main class="grid-container">
+        
+        <aside id="main-cntrl">
+
+                <div class="top">
+
+                    <div id="compose-box">
+
+                        <div id=gg-png>
+                            <img src="/image/create_32dp.png">
+                        </div>
+
+                        <p class="compose">Compose</p>
+
+                    </div>
+
+                    <div id="main-nav-ctrl">
+
+                        <div id="inbox-btn">
+
+                            <div id="icon"><svg id="gg-inbox" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>gg inbox</title><g fill="none" class="nc-icon-wrapper"><path fill-rule="evenodd" clip-rule="evenodd" d="M2 5a3 3 0 0 1 3-3h14a3 3 0 0 1 3 3v15a2 2 0 0 1-2 2H8.148a2.006 2.006 0 0 1-.148.005H4a2 2 0 0 1-2-2V5zm3-1h14a1 1 0 0 1 1 1v9h-4a2 2 0 0 0-2 2v1h-4v-.995a2 2 0 0 0-2-2H4V5a1 1 0 0 1 1-1z" fill="#d93025"/></g></svg></div>
+
+                            <div id="word"><p id="fst">Inbox</p><p>10</p></div>
+
+
+                        </div>
+
+                        <div class="others"> 
+
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ic_star_24px</title>
+                            <g class="nc-icon-wrapper" fill="#767676">
+                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                            </g>
+                            </svg>
+                            </div>
+
+                            <div class="word"><p>Starred</p><p></p></div>
+
+                        </div>
+
+                        <div class="others"> 
+
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ic_watch_later_24px</title>
+                            <g class="nc-icon-wrapper" fill="#767676">
+                                <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm4.2 14.2L11 13V7h1.5v5.2l4.5 2.7-.8 1.3z"/>
+                            </g>
+                            </svg>
+                            </div>
+
+                            <div class="word"><p>Snoozed</p><p></p></div>
+
+                        </div>
+
+                        <div class="others"> 
+
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ic_send_24px</title>
+                            <g class="nc-icon-wrapper" fill="#767676">
+                                <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                            </g>
+                            </svg>
+                            </div>
+
+                            <div class="word"><p>Sent</p><p>12</p></div>
+
+                        </div>
+
+                        <div class="others"> 
+
+                            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ic_insert_drive_file_24px</title>
+                            <g class="nc-icon-wrapper" fill="#767676">
+                                <path d="M6 2c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6H6zm7 7V3.5L18.5 9H13z"/>
+                            </g>
+                            </svg>
+                            </div>
+
+                            <div class="word"><p>Drafts</p><p></p></div>
+
+                        </div>
+
+                        <div class="others"> 
+
+                            <div class="icon">
+                                <svg id="gg-chevron-down" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>gg chevron down</title><g fill="#767676" class="nc-icon-wrapper"><path d="M6.343 7.757L4.93 9.172 12 16.242l7.071-7.07-1.414-1.415L12 13.414 6.343 7.757z" fill="#525b60"/>
+                                </g>
+                                </svg>
+                                </div>
+
+                            <div class="word"><p>More</p><p></p></div> 
+                        </div>
+                    </div>
+
+                </div>
+
+            <div class="bottom">
+
+                    <div id="drag"></div>
+                
+
+                    <div class="video">
+
+                        <div id="meet">
+                            <p>Meet</p>
+                        </div>
+
+                        <div class="join">
+
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ic_videocam_24px</title>
+                                    <g class="nc-icon-wrapper" fill="#767676">
+                                        <path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z"/>
+                                    </g>
+                                    </svg>
+                            </div>
+
+                            <div class="word"><p>New meeting</p></div>
+                            
+                        </div>
+
+                        <div class="join">
+
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ic_keyboard_24px</title>
+                                    <g class="nc-icon-wrapper" fill="#767676">
+                                        <path d="M20 5H4c-1.1 0-1.99.9-1.99 2L2 17c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm-9 3h2v2h-2V8zm0 3h2v2h-2v-2zM8 8h2v2H8V8zm0 3h2v2H8v-2zm-1 2H5v-2h2v2zm0-3H5V8h2v2zm9 7H8v-2h8v2zm0-4h-2v-2h2v2zm0-3h-2V8h2v2zm3 3h-2v-2h2v2zm0-3h-2V8h2v2z"/>
+                                    </g>
+                                </svg>
+                            </div>
+
+                            <div class="word"><p>Join a meeting</p></div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="hangout">
+
+                        <div id="tag"><p>Hangouts</p></div>
+
+                        <div class="profile-btn"> 
+
+                            <div id="pic">
+                                <div class="pic-cont">
+                                    <img src="./image/f04b52da-12f2-449f-b90c-5e4d5e2b1469_361x361.png">
+                                </div>
+                                
+
+                                <div id="status"></div>
+
+                            </div>
+                            
+                            
+                            <div id=name>
+                                <p>Adedamola</p>
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ic_arrow_drop_down_24px</title>
+                                    <g class="nc-icon-wrapper" fill="#767676">
+                                        <path d="M7 10l5 5 5-5z"/>
+                                    </g>
+                                </svg></span>
+                            </div>
+
+                            <div id="add">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ic_add_24px</title>
+                                <g class="nc-icon-wrapper" fill="#525b60">
+                                    <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+                                </g>
+                            </svg></div>
+                        </div>
+                    </div>
+
+                    <div id="second-profile">
+
+                        <div class="profile-btn">
+                            <div id="pic">
+                                <img src="./image/photo-1535713875002-d1d0cf377fde.jpg">
+                            </div>
+
+                            <div id="name"><p>Fred Rodrigo</p></div>
+
+                            <div id="dts">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ic_more_vert_24px</title>
+                                    <g class="nc-icon-wrapper" fill="#525b60">
+                                        <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+
+                </div>
+
+                <div class="footer">
+                    <footer>
+                    
+                        <div class="contact-hang"><img src="./image/contacts_icon42.png"></div>
+
+                        <div class="contact-hang"><img src="./image/hangouts_icon42.png" alt=""></div>   
+                    
+                    </footer>
+                </div>
+
+            </div>
+
+            <div id="footer">
+                
+                
+            </div>
+             
+        </aside>
+
+        <section id="inbox">
+
+            <div id="select-area">
+
+                <div id="left">
+
+                    <div id="check-arrow">
+                        <div id="check">
+                            <input type="checkbox" name="" id="" >
+                        </div>
+
+                        <div id="arrow-d">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ic_arrow_drop_down_24px</title>
+                                <g class="nc-icon-wrapper" fill="#767676">
+                                    <path d="M7 10l5 5 5-5z"/>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="refresh">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ic_refresh_24px</title>
+                            <g class="nc-icon-wrapper" fill="#767676">
+                                <path d="M17.65 6.35C16.2 4.9 14.21 4 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08c-.82 2.33-3.04 4-5.65 4-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="refresh">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ic_more_vert_24px</title>
+                            <g class="nc-icon-wrapper" fill="#767676">
+                                <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
+                            </g>
+                        </svg>
+                    </div>
+                    
+                </div>
+
+                <div id="right">
+
+                    <div id="page">
+                        <p>1 - 100 of 435</p>
+                    </div>
+
+                    <div class="al">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ic_chevron_left_24px</title>
+                            <g class="nc-icon-wrapper" fill="#767676">
+                                <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="al">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ic_chevron_right_24px</title>
+                            <g class="nc-icon-wrapper" fill="#767676">
+                                <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                            </g>
+                        </svg>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="category">
+                
+
+                <div class="cat">
+
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#d43126">
+                            <path fill-rule="evenodd" d="M5 3a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2V5a2 2 0 00-2-2H5zm0 2h10v7h-2l-1 2H8l-1-2H5V5z" clip-rule="evenodd" />
+                          </svg>
+                    </div>
+                    
+                    <div class="word">
+                        <p>Primary</p>
+                    </div>
+
+                </div>
+
+                <div class="cat">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#767676">
+                            <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z" />
+                          </svg>
+                    </div>
+                    <div class="word">
+                        <p>Social</p>
+                    </div>
+                </div>
+
+                <div class="cat">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#767676">
+                            <path fill-rule="evenodd" d="M17.707 9.293a1 1 0 010 1.414l-7 7a1 1 0 01-1.414 0l-7-7A.997.997 0 012 10V5a3 3 0 013-3h5c.256 0 .512.098.707.293l7 7zM5 6a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+                          </svg>
+                    </div>
+
+                    <div id="inside">
+                        <div class="word">
+                            <p>Promotions</p>
+    
+                            <div id="stat"><p>6 new</p></div>
+                        </div>
+                        <div id="summary">
+                            <p>Chelsea FC, Your Google Assistant is requesting that you check your weather app.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+            <div class="message">
+
+                <div class="cta-sender">
+
+                    <div class="check">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ic_check_box_outline_blank_24px</title>
+                            <g class="nc-icon-wrapper" fill="#d9d9d9">
+                                <path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="check">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ic_star_border_24px</title>
+                            <g class="nc-icon-wrapper" fill="#d9d9d9">
+                                <path d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"/>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="sender">
+                        <p>NASA</p>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div class="subject">
+                        <p>Landing your dream job as a developer </p>
+                    </div>
+
+                    <div class="mail">
+                        <p> - Hi there, Before I landed my dream job at Spotify, I was determined to improve my technical interviewing skills.
+                        </p>
+                    </div>
+                    
+                </div>
+
+                <div class="time">
+                    <p>
+                        Mar 13
+                    </p>
+            </div>
+            </div>
+
+            <div class="message">
+
+                <div class="cta-sender">
+
+                    <div class="check">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ic_check_box_outline_blank_24px</title>
+                            <g class="nc-icon-wrapper" fill="#d9d9d9">
+                                <path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="check">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ic_star_border_24px</title>
+                            <g class="nc-icon-wrapper" fill="#d9d9d9">
+                                <path d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"/>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="sender">
+                        <p>NASA</p>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div class="subject">
+                        <p>Landing your dream job as a developer </p>
+                    </div>
+
+                    <div class="mail">
+                        <p> - Hi there, Before I landed my dream job at Spotify, I was determined to improve my technical interviewing skills.
+                        </p>
+                    </div>
+                    
+                </div>
+
+                <div class="time">
+                    <p>
+                        Mar 13
+                    </p>
+            </div>
+            </div>
+
+            <div class="message">
+
+                <div class="cta-sender">
+
+                    <div class="check">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ic_check_box_outline_blank_24px</title>
+                            <g class="nc-icon-wrapper" fill="#d9d9d9">
+                                <path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="check">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ic_star_border_24px</title>
+                            <g class="nc-icon-wrapper" fill="#d9d9d9">
+                                <path d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"/>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="sender">
+                        <p>NASA</p>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div class="subject">
+                        <p>Landing your dream job as a developer </p>
+                    </div>
+
+                    <div class="mail">
+                        <p> - Hi there, Before I landed my dream job at Spotify, I was determined to improve my technical interviewing skills.
+                        </p>
+                    </div>
+                    
+                </div>
+
+                <div class="time">
+                    <p>
+                        Mar 13
+                    </p>
+            </div>
+            </div>     
+            
+            <div class="message">
+
+                <div class="cta-sender">
+
+                    <div class="check">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ic_check_box_outline_blank_24px</title>
+                            <g class="nc-icon-wrapper" fill="#d9d9d9">
+                                <path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="check">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ic_star_border_24px</title>
+                            <g class="nc-icon-wrapper" fill="#d9d9d9">
+                                <path d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"/>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="sender">
+                        <p>NASA</p>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div class="subject">
+                        <p>Landing your dream job as a developer </p>
+                    </div>
+
+                    <div class="mail">
+                        <p> - Hi there, Before I landed my dream job at Spotify, I was determined to improve my technical interviewing skills.
+                        </p>
+                    </div>
+                    
+                </div>
+
+                <div class="time">
+                    <p>
+                        Mar 13
+                    </p>
+            </div>
+            </div>
+
+            <div class="message">
+
+                <div class="cta-sender">
+
+                    <div class="check">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ic_check_box_outline_blank_24px</title>
+                            <g class="nc-icon-wrapper" fill="#d9d9d9">
+                                <path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="check">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ic_star_border_24px</title>
+                            <g class="nc-icon-wrapper" fill="#d9d9d9">
+                                <path d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"/>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="sender">
+                        <p>NASA</p>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div class="subject">
+                        <p>Landing your dream job as a developer </p>
+                    </div>
+
+                    <div class="mail">
+                        <p> - Hi there, Before I landed my dream job at Spotify, I was determined to improve my technical interviewing skills.
+                        </p>
+                    </div>
+                    
+                </div>
+
+                <div class="time">
+                    <p>
+                        Mar 13
+                    </p>
+            </div>
+            </div>
+
+            <div class="message">
+
+                <div class="cta-sender">
+
+                    <div class="check">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ic_check_box_outline_blank_24px</title>
+                            <g class="nc-icon-wrapper" fill="#d9d9d9">
+                                <path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="check">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ic_star_border_24px</title>
+                            <g class="nc-icon-wrapper" fill="#d9d9d9">
+                                <path d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"/>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="sender">
+                        <p>NASA</p>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div class="subject">
+                        <p>Landing your dream job as a developer </p>
+                    </div>
+
+                    <div class="mail">
+                        <p> - Hi there, Before I landed my dream job at Spotify, I was determined to improve my technical interviewing skills.
+                        </p>
+                    </div>
+                    
+                </div>
+
+                <div class="time">
+                    <p>
+                        Mar 13
+                    </p>
+                </div>
+            </div>
+
+            <div class="message">
+
+                <div class="cta-sender">
+
+                    <div class="check">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ic_check_box_outline_blank_24px</title>
+                            <g class="nc-icon-wrapper" fill="#d9d9d9">
+                                <path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="check">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ic_star_border_24px</title>
+                            <g class="nc-icon-wrapper" fill="#d9d9d9">
+                                <path d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"/>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="sender">
+                        <p>NASA</p>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div class="subject">
+                        <p>Landing your dream job as a developer </p>
+                    </div>
+
+                    <div class="mail">
+                        <p> - Hi there, Before I landed my dream job at Spotify, I was determined to improve my technical interviewing skills.
+                        </p>
+                    </div>
+                    
+                </div>
+
+                <div class="time">
+                    <p>
+                        Mar 13
+                    </p>
+            </div>
+            </div>
+
+            <div class="message">
+
+                <div class="cta-sender">
+
+                    <div class="check">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ic_check_box_outline_blank_24px</title>
+                            <g class="nc-icon-wrapper" fill="#d9d9d9">
+                                <path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="check">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ic_star_border_24px</title>
+                            <g class="nc-icon-wrapper" fill="#d9d9d9">
+                                <path d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"/>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="sender">
+                        <p>NASA</p>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div class="subject">
+                        <p>Landing your dream job as a developer </p>
+                    </div>
+
+                    <div class="mail">
+                        <p> - Hi there, Before I landed my dream job at Spotify, I was determined to improve my technical interviewing skills.
+                        </p>
+                    </div>
+                    
+                </div>
+
+                <div class="time">
+                    <p>
+                        Mar 13
+                    </p>
+            </div>
+            </div>
+
+            <div class="message">
+
+                <div class="cta-sender">
+
+                    <div class="check">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ic_check_box_outline_blank_24px</title>
+                            <g class="nc-icon-wrapper" fill="#d9d9d9">
+                                <path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="check">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ic_star_border_24px</title>
+                            <g class="nc-icon-wrapper" fill="#d9d9d9">
+                                <path d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"/>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="sender">
+                        <p>NASA</p>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div class="subject">
+                        <p>Landing your dream job as a developer </p>
+                    </div>
+
+                    <div class="mail">
+                        <p> - Hi there, Before I landed my dream job at Spotify, I was determined to improve my technical interviewing skills.
+                        </p>
+                    </div>
+                    
+                </div>
+
+                <div class="time">
+                    <p>
+                        Mar 13
+                    </p>
+            </div>
+            </div>
+
+            <div class="message">
+
+                <div class="cta-sender">
+
+                    <div class="check">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ic_check_box_outline_blank_24px</title>
+                            <g class="nc-icon-wrapper" fill="#d9d9d9">
+                                <path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="check">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ic_star_border_24px</title>
+                            <g class="nc-icon-wrapper" fill="#d9d9d9">
+                                <path d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"/>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="sender">
+                        <p>NASA</p>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div class="subject">
+                        <p>Landing your dream job as a developer </p>
+                    </div>
+
+                    <div class="mail">
+                        <p> - Hi there, Before I landed my dream job at Spotify, I was determined to improve my technical interviewing skills.
+                        </p>
+                    </div>
+                    
+                </div>
+
+                <div class="time">
+                    <p>
+                        Mar 13
+                    </p>
+            </div>
+            </div>
+
+            <div class="message">
+
+                <div class="cta-sender">
+
+                    <div class="check">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ic_check_box_outline_blank_24px</title>
+                            <g class="nc-icon-wrapper" fill="#d9d9d9">
+                                <path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="check">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ic_star_border_24px</title>
+                            <g class="nc-icon-wrapper" fill="#d9d9d9">
+                                <path d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"/>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="sender">
+                        <p>NASA</p>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div class="subject">
+                        <p>Landing your dream job as a developer </p>
+                    </div>
+
+                    <div class="mail">
+                        <p> - Hi there, Before I landed my dream job at Spotify, I was determined to improve my technical interviewing skills.
+                        </p>
+                    </div>
+                    
+                </div>
+
+                <div class="time">
+                    <p>
+                        Mar 13
+                    </p>
+            </div>
+            </div>
+
+            <div class="message">
+
+                <div class="cta-sender">
+
+                    <div class="check">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ic_check_box_outline_blank_24px</title>
+                            <g class="nc-icon-wrapper" fill="#d9d9d9">
+                                <path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="check">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ic_star_border_24px</title>
+                            <g class="nc-icon-wrapper" fill="#d9d9d9">
+                                <path d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"/>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="sender">
+                        <p>NASA</p>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div class="subject">
+                        <p>Landing your dream job as a developer </p>
+                    </div>
+
+                    <div class="mail">
+                        <p> - Hi there, Before I landed my dream job at Spotify, I was determined to improve my technical interviewing skills.
+                        </p>
+                    </div>
+                    
+                </div>
+
+                <div class="time">
+                    <p>
+                        Mar 13
+                    </p>
+            </div>
+            </div>
+
+            <div class="message">
+
+                <div class="cta-sender">
+
+                    <div class="check">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ic_check_box_outline_blank_24px</title>
+                            <g class="nc-icon-wrapper" fill="#d9d9d9">
+                                <path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="check">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ic_star_border_24px</title>
+                            <g class="nc-icon-wrapper" fill="#d9d9d9">
+                                <path d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"/>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="sender">
+                        <p>NASA</p>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div class="subject">
+                        <p>Landing your dream job as a developer </p>
+                    </div>
+
+                    <div class="mail">
+                        <p> - Hi there, Before I landed my dream job at Spotify, I was determined to improve my technical interviewing skills.
+                        </p>
+                    </div>
+                    
+                </div>
+
+                <div class="time">
+                    <p>
+                        Mar 13
+                    </p>
+            </div>
+            </div>
+
+            <div class="message">
+
+                <div class="cta-sender">
+
+                    <div class="check">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ic_check_box_outline_blank_24px</title>
+                            <g class="nc-icon-wrapper" fill="#d9d9d9">
+                                <path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="check">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ic_star_border_24px</title>
+                            <g class="nc-icon-wrapper" fill="#d9d9d9">
+                                <path d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"/>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="sender">
+                        <p>NASA</p>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div class="subject">
+                        <p>Landing your dream job as a developer </p>
+                    </div>
+
+                    <div class="mail">
+                        <p> - Hi there, Before I landed my dream job at Spotify, I was determined to improve my technical interviewing skills.
+                        </p>
+                    </div>
+                    
+                </div>
+
+                <div class="time">
+                    <p>
+                        Mar 13
+                    </p>
+            </div>
+            </div>
+
+            <div class="message">
+
+                <div class="cta-sender">
+
+                    <div class="check">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ic_check_box_outline_blank_24px</title>
+                            <g class="nc-icon-wrapper" fill="#d9d9d9">
+                                <path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="check">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ic_star_border_24px</title>
+                            <g class="nc-icon-wrapper" fill="#d9d9d9">
+                                <path d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"/>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="sender">
+                        <p>NASA</p>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div class="subject">
+                        <p>Landing your dream job as a developer </p>
+                    </div>
+
+                    <div class="mail">
+                        <p> - Hi there, Before I landed my dream job at Spotify, I was determined to improve my technical interviewing skills.
+                        </p>
+                    </div>
+                    
+                </div>
+
+                <div class="time">
+                    <p>
+                        Mar 13
+                    </p>
+            </div>
+            </div>
+
+            <div class="message">
+
+                <div class="cta-sender">
+
+                    <div class="check">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ic_check_box_outline_blank_24px</title>
+                            <g class="nc-icon-wrapper" fill="#d9d9d9">
+                                <path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="check">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ic_star_border_24px</title>
+                            <g class="nc-icon-wrapper" fill="#d9d9d9">
+                                <path d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"/>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="sender">
+                        <p>NASA</p>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div class="subject">
+                        <p>Landing your dream job as a developer </p>
+                    </div>
+
+                    <div class="mail">
+                        <p> - Hi there, Before I landed my dream job at Spotify, I was determined to improve my technical interviewing skills.
+                        </p>
+                    </div>
+                    
+                </div>
+
+                <div class="time">
+                    <p>
+                        Mar 13
+                    </p>
+            </div>
+            </div>
+
+            <div class="message">
+
+                <div class="cta-sender">
+
+                    <div class="check">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ic_check_box_outline_blank_24px</title>
+                            <g class="nc-icon-wrapper" fill="#d9d9d9">
+                                <path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="check">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ic_star_border_24px</title>
+                            <g class="nc-icon-wrapper" fill="#d9d9d9">
+                                <path d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"/>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="sender">
+                        <p>NASA</p>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div class="subject">
+                        <p>Landing your dream job as a developer </p>
+                    </div>
+
+                    <div class="mail">
+                        <p> - Hi there, Before I landed my dream job at Spotify, I was determined to improve my technical interviewing skills.
+                        </p>
+                    </div>
+                    
+                </div>
+
+                <div class="time">
+                    <p>
+                        Mar 13
+                    </p>
+            </div>
+            </div>
+
+            <div class="message">
+
+                <div class="cta-sender">
+
+                    <div class="check">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ic_check_box_outline_blank_24px</title>
+                            <g class="nc-icon-wrapper" fill="#d9d9d9">
+                                <path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="check">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ic_star_border_24px</title>
+                            <g class="nc-icon-wrapper" fill="#d9d9d9">
+                                <path d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"/>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="sender">
+                        <p>NASA</p>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div class="subject">
+                        <p>Landing your dream job as a developer </p>
+                    </div>
+
+                    <div class="mail">
+                        <p> - Hi there, Before I landed my dream job at Spotify, I was determined to improve my technical interviewing skills.
+                        </p>
+                    </div>
+                    
+                </div>
+
+                <div class="time">
+                    <p>
+                        Mar 13
+                    </p>
+            </div>
+            </div>
+
+            <div class="message">
+
+                <div class="cta-sender">
+
+                    <div class="check">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ic_check_box_outline_blank_24px</title>
+                            <g class="nc-icon-wrapper" fill="#d9d9d9">
+                                <path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="check">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ic_star_border_24px</title>
+                            <g class="nc-icon-wrapper" fill="#d9d9d9">
+                                <path d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"/>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="sender">
+                        <p>NASA</p>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div class="subject">
+                        <p>Landing your dream job as a developer </p>
+                    </div>
+
+                    <div class="mail">
+                        <p> - Hi there, Before I landed my dream job at Spotify, I was determined to improve my technical interviewing skills.
+                        </p>
+                    </div>
+                    
+                </div>
+
+                <div class="time">
+                    <p>
+                        Mar 13
+                    </p>
+            </div>
+            </div>
+
+            <div class="message">
+
+                <div class="cta-sender">
+
+                    <div class="check">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ic_check_box_outline_blank_24px</title>
+                            <g class="nc-icon-wrapper" fill="#d9d9d9">
+                                <path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="check">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ic_star_border_24px</title>
+                            <g class="nc-icon-wrapper" fill="#d9d9d9">
+                                <path d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"/>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="sender">
+                        <p>NASA</p>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div class="subject">
+                        <p>Landing your dream job as a developer </p>
+                    </div>
+
+                    <div class="mail">
+                        <p> - Hi there, Before I landed my dream job at Spotify, I was determined to improve my technical interviewing skills.
+                        </p>
+                    </div>
+                    
+                </div>
+
+                <div class="time">
+                    <p>
+                        Mar 13
+                    </p>
+            </div>
+            </div>
+
+            <div class="message">
+
+                <div class="cta-sender">
+
+                    <div class="check">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ic_check_box_outline_blank_24px</title>
+                            <g class="nc-icon-wrapper" fill="#d9d9d9">
+                                <path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="check">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ic_star_border_24px</title>
+                            <g class="nc-icon-wrapper" fill="#d9d9d9">
+                                <path d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"/>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="sender">
+                        <p>NASA</p>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div class="subject">
+                        <p>Landing your dream job as a developer </p>
+                    </div>
+
+                    <div class="mail">
+                        <p> - Hi there, Before I landed my dream job at Spotify, I was determined to improve my technical interviewing skills.
+                        </p>
+                    </div>
+                    
+                </div>
+
+                <div class="time">
+                    <p>
+                        Mar 13
+                    </p>
+            </div>
+            </div>
+
+            <div class="message">
+
+                <div class="cta-sender">
+
+                    <div class="check">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ic_check_box_outline_blank_24px</title>
+                            <g class="nc-icon-wrapper" fill="#d9d9d9">
+                                <path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="check">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ic_star_border_24px</title>
+                            <g class="nc-icon-wrapper" fill="#d9d9d9">
+                                <path d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"/>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="sender">
+                        <p>NASA</p>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div class="subject">
+                        <p>Landing your dream job as a developer </p>
+                    </div>
+
+                    <div class="mail">
+                        <p> - Hi there, Before I landed my dream job at Spotify, I was determined to improve my technical interviewing skills.
+                        </p>
+                    </div>
+                    
+                </div>
+
+                <div class="time">
+                    <p>
+                        Mar 13
+                    </p>
+            </div>
+            </div>
+
+        </section>
+
+        <aside id="gg-app">
+            <div class="calendar"><img src="/image/calendar_2020q4_2x.png"></div>
+            <div class="calendar"><img src="/image/keep_2020q4v3_2x.png" alt=""></div>
+            <div class="calendar"><img src="/image/tasks2_2x.png" alt=""></div>
+            <div class="calendar"><img src="/image/contacts_2x.png" alt=""></div>
+            <div id="sep"></div>
+            <div class="calendar"><img src="/image/add_grey600_24dp.png" alt=""></div>
+            <div id="calendar">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ic_chevron_right_24px</title>
+                    <g class="nc-icon-wrapper" fill="#767676">
+                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                    </g>
+                </svg>
+            </div>
+        </aside>
+
+    </main>
+   
+    
+</body>
+
+</html>
